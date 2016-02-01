@@ -13,9 +13,10 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
 
     <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
 
 
     <!-- Fonts -->
@@ -24,33 +25,94 @@
 </head>
 
 <body>
-  <!-- Navigation Bar one -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+  <nav class="navbar navbar-default" role="navigation" id="first-nav">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
       </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <form class="navbar-form navbar-right">
-          <div class="form-group">
-            <input type="text" placeholder="Search" class="form-control">
-          </div>
-          <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
-          <i class="fa fa-bars"></i>
-        </form>
-      </div><!--/.navbar-collapse -->
-    </div>
+      <a class="navbar-brand navbar-center" href="#"><img src="images/brand-nav-logo.jpg" /></a>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse">
+        <div class="fist-nav-links">
+          <form class="navbar-form pull-right searching" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+          </form>
+          <ul class="nav navbar-nav first-nav pull-right">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">DDL</a></li>
+            <li><a href="#">NomNom</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
   </nav>
-  <!-- END Navigation Bar ONE -->
+
+  <div class="navbar navbar-default" id="default-color">
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div><!-- end navbar-header -->
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="current"><a href="#home">Home</a></li>
+        <li><a href="#home">Days Out</a></li>
+        <li><a href="#home">Ghosts</a></li>
+        <li><a href="#home">Beasts</a></li>
+        <li><a href="#home">History</a></li>
+        <li><a href="#home">About Us</a></li>
+        <li><a href="#home">Gifts</a></li>
+        <li><a href="#home">Blog</a></li>
+        <li><a href="#home">Contact Us</a></li>
+      </ul>
+    </div><!-- end collapse -->
+  </div>
+
+  <br>
+  <!-- Main Container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-offset-2 col-sm-8">
+          <img class="img-responsive"src="images/bg01.jpg"/>
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="col-sm-offset-2 col-sm-8">
+        <div class="panel panel-default">
+          <div class="panel-body text-center">
+              <div class="col-sm-offset-2 col-sm-8">
+                <img class="img-responsive" src="images/title01.png" />
+                <br>
+                <p>Nourish China is here to help the growing interest in healthy food for the everyday China people - with care and attention to quality and fresh ingredients, at Nourish we plan to lead the way.</p>
+                <br>
+                <center><img class="img-responsive" src="images/diamond.jpg" /></center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-
-
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
 </body>
 
 </html>
