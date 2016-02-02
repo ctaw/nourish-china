@@ -6,6 +6,7 @@ body{
   background-color: #f5f5f5;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  color:#767676;
 }
 /* CSS used here will be applied after bootstrap.css */
 .navbar-collapse {
@@ -72,14 +73,14 @@ section#cooking {
 .title-img{
   width: 280px;
 }
-section#gobble,#schools{
+section#gobble,#schools,#nutritions,#central-kitchen{
   margin-top:100px;
 }
 .highlight-text{
-  color:hsl(357, 100%, 50%);
+  color:#c72435;
 }
 .notice-text{
-  color:hsl(357, 100%, 50%);
+  color:#c72435;
   font-size: 13px;
 }
 .btn-explore{
@@ -99,8 +100,40 @@ section#gobble,#schools{
 .title-link {
   margin-top: 10px;
 }
+section#factory-canteens{
+  background: url('/images/factory-image.jpg') no-repeat center scroll;
+  background-size:cover;
+  height: 420px;
+  margin-top: 60px;
+}
+#factory-canteens-container{
+  margin-top: 100px;
+}
+#nutritions-container{
+  background: url('/images/nutrition-image.png') no-repeat center scroll;
+  background-size:cover;
+  height: 380px;
+}
 
-
+section#media{
+  background-color: #2c3849;
+}
+section#media1{
+  background-color: #1e252d;
+}
+.media-container{
+  padding:30px;
+}
+.media-top{    
+  margin-top: 60px;
+}
+.video-div{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.col-margin-left-2{
+  margin-left: 55px;
+}
 /** back to top **/
 a.back-to-top {
 	display: none;
@@ -118,4 +151,7 @@ a.back-to-top {
 }
 a:hover.back-to-top {
 	background-color: #000;
+}
+.clearfix{
+  margin-top: 10px;
 }
