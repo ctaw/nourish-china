@@ -66,7 +66,7 @@ section#cooking {
 .title-img{
   width: 280px;
 }
-section#gobble{
+section#gobble,#schools{
   margin-top:100px;
 }
 .highlight-text{
@@ -92,4 +92,24 @@ section#gobble{
 }
 .title-link {
   margin-top: 10px;
+}
+
+
+/** back to top **/
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #f57834 url("/images/up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+a:hover.back-to-top {
+	background-color: #000;
 }
