@@ -24,7 +24,7 @@
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <nav class="navbar navbar-default" role="navigation" id="first-nav">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -36,15 +36,15 @@
           <span class="icon-bar"></span>
         </button>
       </div>
-      <a class="navbar-brand navbar-center" href="#"><img src="images/brand-nav-logo.jpg" /></a>
+      <a class="navbar-brand navbar-center page-scroll" href="#page-top"><img src="images/brand-nav-logo.jpg" /></a>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse">
         <div class="fist-nav-links">
           <form class="navbar-form pull-right searching" role="search">
             <div class="form-group">
-              <input type="text" class="form-control">
+              <input type="text" class="form-control input-sm">
             </div>
-            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+            <button type="submit" class="btn btn-default btn-sm"><i class="fa fa-search"></i></button>
           </form>
           <ul class="nav navbar-nav first-nav pull-right">
             <li><a href="#">About Us</a></li>
@@ -70,45 +70,104 @@
 
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="current"><a href="#home">Home</a></li>
-        <li><a href="#home">Days Out</a></li>
-        <li><a href="#home">Ghosts</a></li>
-        <li><a href="#home">Beasts</a></li>
-        <li><a href="#home">History</a></li>
-        <li><a href="#home">About Us</a></li>
-        <li><a href="#home">Gifts</a></li>
-        <li><a href="#home">Blog</a></li>
-        <li><a href="#home">Contact Us</a></li>
+        <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+        <li><a href="#cooking">Cooking</a></li>
+        <li><a href="#gobble">Gobble</a></li>
+        <li><a href="#schools">Schools</a></li>
+        <li><a href="#factory-canteens">Factory Canteens</a></li>
+        <li><a href="#nutritions">Nutritions</a></li>
+        <li><a href="#central-kitchen">Central Kitchen</a></li>
+        <li><a href="#media">Media</a></li>
       </ul>
     </div><!-- end collapse -->
   </div>
 
   <br>
-  <!-- Main Container -->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-offset-2 col-sm-8">
-          <img class="img-responsive"src="images/bg01.jpg"/>
-      </div>
-    </div>
 
-    <br>
-    <div class="row">
-      <div class="col-sm-offset-2 col-sm-8">
-        <div class="panel panel-default">
-          <div class="panel-body text-center">
-              <div class="col-sm-offset-2 col-sm-8">
-                <img class="img-responsive" src="images/title01.png" />
-                <br>
-                <p>Nourish China is here to help the growing interest in healthy food for the everyday China people - with care and attention to quality and fresh ingredients, at Nourish we plan to lead the way.</p>
-                <br>
-                <center><img class="img-responsive" src="images/diamond.jpg" /></center>
+  <!-- Intro Section -->
+  <section id="intro" class="intro-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-8">
+              <img class="img-responsive"src="images/bg01.jpg"/>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-8">
+            <div class="panel panel-default">
+              <div class="panel-body text-center">
+                  <div class="col-sm-offset-2 col-sm-8">
+                    <img class="img-responsive title-link" src="images/title01.png" />
+                    <br>
+                    <p>Nourish China is here to help the growing interest in healthy food for the everyday China people - with care and attention to quality and fresh ingredients, at Nourish we plan to lead the way.</p>
+                    <br>
+                    <center><img class="img-responsive" src="images/diamond.jpg" /></center>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+  </section>
+
+  <!-- Cooking Section -->
+  <aside class="cooking-section"></aside>
+  <section id="cooking">
+    <div class="container cooking-container">
+      <div class="row">
+        <div class="col-sm-offset-2 col-md-4">
+          <img src="images/cooking-title.png" class="title-img"/>
+        </div>
+        <div class="col-md-5">
+          <p class="highlight-text">We strive to cook and create exciting new meals!</p>
+          <p>Our head chefs plan and prepare dishes from fresh foods delivered each morning.
+            Balanced meals are prepared and thought out in advance giving the best nutritional balance.
+            With introducing better protein based meals with less fat and using the freshest vegetables
+            from the western provinces, we combine to offer the best <a href="/" class="btn btn-sm btn-explore-01">explore ></a></p>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- Gobble Section -->
+  <section id="gobble" class="gobble-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-8">
+              <img class="img-responsive"src="images/gobble-image.png"/>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-8">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-offset-2 col-sm-8">
+                      <img class="img-responsive title-link" src="images/title01.png" />
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-sm-offset-1 col-sm-10">
+                    <p>
+                      Gobble introduces from tech to taste, “The future of home delivery”. Gobble is the sister company of Nourish China complimenting each other with shared technology, a centralized kitchen and supply chain. From the Gobble team comes an advanced food delivery system bringing our quality and great prices directly to your door.
+                    </p>
+                    <p>
+                      Gobble brings our master chef cooked meals to your door in just a few clicks with HOME, BUSINESS, SCHOOL AND OFFICE deliveries on offer.
+                    </p>
+                    <p class="notice-text">Please click here at our Gobble website for additional information and to place your order today!</p>
+                    <center><a href="/" class="btn btn-explore">explore ></a>
+                    <img class="img-responsive" src="images/diamond.jpg" /></center>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
 
 
   <script src="js/jquery.js"></script>
