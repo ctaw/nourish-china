@@ -13,7 +13,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="css/font-awesome.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -25,39 +26,49 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
   <nav class="navbar navbar-default" role="navigation" id="first-nav">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <a class="navbar-brand navbar-center page-scroll" href="#page-top"><img src="images/brand-nav-logo.jpg" /></a>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse">
-        <div class="fist-nav-links">
-          <form class="navbar-form pull-right searching" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control input-sm">
-            </div>
-            <button type="submit" class="btn btn-default btn-sm"><i class="fa fa-search"></i></button>
-          </form>
-          <ul class="nav navbar-nav first-nav pull-right">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">DDL</a></li>
-            <li><a href="#">NomNom</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand-centered"><a href="/"><img src="images/brand-nav-logo.jpg" /></a></div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+      <ul class="nav navbar-nav first-nav pull-left" style="margin-left: -120px;">
+        <li><img style="width:50%" src="images/flag.png" /></li>
+      </ul>
+      <form class="navbar-form pull-right searching" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control input-sm">
         </div>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        <button type="submit" class="btn btn-default btn-sm"><i class="fa fa-search"></i></button>
+      </form>
+      <ul class="nav navbar-nav first-nav pull-right">
+        <li><a href="/about-us.html">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">DDL</a></li>
+        <li><a href="#">NomNom</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
   </nav>
+
+
+
+
+
+
+
 
   <div class="navbar navbar-default" id="default-color">
     <div class="navbar-header">
@@ -265,7 +276,7 @@
                 <div class="row">
                   <div class="col-sm-offset-1 col-sm-10">
                     <p>
-                      Nourish and DDL currently have a licensed central kitchen in Baoan.  Our facility is 2000 square meters and through this kitchen we have created an additional scale through the use of efficiency, speed, centralised recipe management and allowing us to reduce head count within onsite factories and 
+                      Nourish and DDL currently have a licensed central kitchen in Baoan.  Our facility is 2000 square meters and through this kitchen we have created an additional scale through the use of efficiency, speed, centralised recipe management and allowing us to reduce head count within onsite factories and
                       <a href="/" class="btn btn-sm btn-explore-01">explore ></a>
                     </p>
                     <center><img class="img-responsive" src="images/diamond.jpg" /></center>
@@ -278,6 +289,7 @@
       </div>
   </section>
 
+  <!-- Media Section -->
   <section id="media" class="media-section">
       <div class="container">
         <div class="row">
@@ -298,8 +310,13 @@
           <div class="col-sm-3">
             <hr>
             <p>5:53 PM CST
-              November 12,2015</p>  
+              November 12,2015</p>
             <hr>
+            <ul class="list-inline">
+              <li><a href="#"><i class="fa fa-facebook facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-reply reply"></i></a></li>
+            </ul>
           </div>
           <div class="col-sm-8">
             <p>
@@ -310,6 +327,48 @@
         </div>
       </div>
   </section>
+
+  <!-- Footer Section -->
+  <section id="footer">
+    <div class="container">
+      <div class="row" id="footer-container">
+        <center><img class="img-responsive" style="width: 25%;" src="images/bullets.png" /></center>
+      </div>
+    </div>
+  </section>
+  <section id="footer1">
+    <div class="container">
+      <div class="row">
+          <ul class="list-inline text-center" id="footer-link">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">DDL</a></li>
+            <li><a href="#">NomNom</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 alignmentM"><img class="img-responsive" style="width: 73%;" src="images/meet.png" /></div>
+        <div class="col-md-4 text-center alignmentM">
+          <p>+ (86) 186 03027620
+            <br>2408,9 Queens Road, Central, Hong Kong
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerimage"><center><img class="img-responsive" style="width: 10%;" src="images/nourish-footer.png" /></center></div>
+    </div>
+  </footer>
 
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>

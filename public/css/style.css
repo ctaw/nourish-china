@@ -20,8 +20,12 @@ body{
 /**
 ** Navbar
 **/
+.navbar-brand-centered{
+  margin-top: 15px;
+}
 .searching {
   margin-top: 30px;
+  margin-right: -100px;
 }
 .navbar-center img {
   margin-left: 300%;
@@ -120,11 +124,12 @@ section#media{
 }
 section#media1{
   background-color: #1e252d;
+  height: 280px;
 }
 .media-container{
   padding:30px;
 }
-.media-top{    
+.media-top{
   margin-top: 60px;
 }
 .video-div{
@@ -133,6 +138,46 @@ section#media1{
 }
 .col-margin-left-2{
   margin-left: 55px;
+}
+
+
+section#footer{
+  background-color:#f4f5f6;
+  height: 250px;
+}
+section#footer1{
+  background-color: #f7f8f2;
+  height: 100px;
+}
+section#footer2{
+  background-color: #dddfd2;
+  height: 75px;
+}
+footer{
+  background-color: #4c4d4e;
+  height: 50px;
+}
+.footerimage{
+  margin-top: 10px;
+}
+#footer-link{
+  margin-top: 50px;
+}
+.alignmentM{
+  margin-top: 20px;
+}
+#footer-link > li {
+  margin: 0 30px 0 0;
+}
+#footer-link a{
+  color : #7d7e78;
+  text-decoration: none;
+}
+#footer-link a:hover{
+  color: #f57834;
+}
+#footer-container{
+  margin-top: 100px
 }
 /** back to top **/
 a.back-to-top {
@@ -154,4 +199,35 @@ a:hover.back-to-top {
 }
 .clearfix{
   margin-top: 10px;
+}
+
+/** Socials **/
+.facebook {
+  color: #4769A5;
+}
+.twitter {
+  color: #65CCEF;
+}
+.reply {
+  color: #dcdcdc;
+}
+.facebook:hover,
+.twitter:hover,
+.reply:hover{
+  color: #f57834;
+}
+
+@media screen and (min-width:768px){
+  .navbar-brand-centered {
+      position: absolute;
+      left: 50%;
+      display: block;
+      width: 160px;
+      text-align: center;
+      background-color: #eee;
+  }
+  .navbar>.container .navbar-brand-centered,
+  .navbar>.container-fluid .navbar-brand-centered {
+      margin-left: -80px;
+  }
 }
