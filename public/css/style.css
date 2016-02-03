@@ -226,13 +226,15 @@ a:hover.back-to-top {
   border: none;
 }
 
+.navbar-brand-centered img{
+  width: 40%;
+}
 @media screen and (min-width:768px){
   .navbar-brand-centered {
       position: absolute;
-      left: 50%;
+      left: 35%;
       display: block;
       text-align: center;
-      background-color: #eee;
   }
   .navbar>.container .navbar-brand-centered,
   .navbar>.container-fluid .navbar-brand-centered {
