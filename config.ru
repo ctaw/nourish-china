@@ -105,3 +105,68 @@ map "/central-kitchen" do
   ]
 }
 end
+
+map "/services" do
+  run lambda { |env|
+  [
+    200,
+    {
+      'Content-Type'  => 'text/html',
+      'Cache-Control' => 'public, max-age=86400'
+    },
+    File.open('public/services.html', File::RDONLY)
+  ]
+}
+end
+
+map "/ddl" do
+  run lambda { |env|
+  [
+    200,
+    {
+      'Content-Type'  => 'text/html',
+      'Cache-Control' => 'public, max-age=86400'
+    },
+    File.open('public/ddl.html', File::RDONLY)
+  ]
+}
+end
+
+map "/contact" do
+  run lambda { |env|
+  [
+    200,
+    {
+      'Content-Type'  => 'text/html',
+      'Cache-Control' => 'public, max-age=86400'
+    },
+    File.open('public/contact.html', File::RDONLY)
+  ]
+}
+end
+
+map "/blog" do
+  run lambda { |env|
+  [
+    200,
+    {
+      'Content-Type'  => 'text/html',
+      'Cache-Control' => 'public, max-age=86400'
+    },
+    File.open('public/blog.html', File::RDONLY)
+  ]
+}
+end
+
+map "/nomnom" do
+  run lambda { |env|
+  [
+    200,
+    {
+      'Content-Type'  => 'text/html',
+      'Cache-Control' => 'public, max-age=86400'
+    },
+    File.open('public/nomnom.html', File::RDONLY)
+  ]
+}
+end
