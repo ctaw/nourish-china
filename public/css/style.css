@@ -125,7 +125,8 @@ section#factory-canteens{
 #nutritions-container{
   background: url('/images/nutrition-image.png') no-repeat center scroll;
   background-size:cover;
-  height: 380px;
+  height: auto;
+  border: #eee 1px solid;
 }
 
 section#media{
