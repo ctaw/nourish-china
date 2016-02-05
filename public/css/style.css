@@ -158,10 +158,13 @@ section#footer-bottom{
 section#footer{
   display: none;
   /*background-color:#f4f5f6;*/
-  height: 150px;
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+ul.circle-links{
+  list-style-type: none;
+  line-height: 30px;
 }
 section#footer1{
   background-color: #f7f8f2;
