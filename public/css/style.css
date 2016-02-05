@@ -150,10 +150,18 @@ section#media1{
   margin-left: 55px;
 }
 
-
-section#footer{
+section#footer-bottom{
   background-color:#f4f5f6;
   height: 250px;
+}
+
+section#footer{
+  display: none;
+  /*background-color:#f4f5f6;*/
+  height: 150px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 section#footer1{
   background-color: #f7f8f2;
@@ -186,26 +194,8 @@ footer{
 #footer-link a:hover{
   color: #f57834;
 }
-#footer-container{
-  margin-top: 100px
-}
-/** back to top **/
-a.back-to-top {
-	display: none;
-	width: 40px;
-	height: 40px;
-	text-indent: -9999px;
-	position: fixed;
-	z-index: 999;
-	right: 20px;
-	bottom: 20px;
-	background: #f57834 url("/images/up-arrow.png") no-repeat center 43%;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-}
-a:hover.back-to-top {
-	background-color: #000;
+#footer-container-bottom{
+  margin-top: 100px;
 }
 .clearfix{
   margin-top: 10px;
@@ -234,6 +224,9 @@ a:hover.back-to-top {
 
 .navbar-brand-centered img{
   width: 40%;
+}
+#footer-link a.current{
+  color: #f57834;
 }
 @media screen and (min-width:768px){
   .navbar-brand-centered {

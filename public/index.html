@@ -332,13 +332,31 @@
         <!-- <center><img class="img-responsive" style="width: 25%;" src="images/bullets.png" /></center> -->
         <div class="row">
             <ul class="list-inline text-center circle-links" id="footer-link">
-              <li><a href="#cooking"><i class="fa fa-circle"></i></a></li>
-              <li><a href="#gobble"><i class="fa fa-circle"></i></a></li>
-              <li><a href="#schools"><i class="fa fa-circle"></i></a></li>
-              <li><a href="#factory-canteens"><i class="fa fa-circle"></i></a></li>
-              <li><a href="#nutritions"><i class="fa fa-circle"></i></a></li>
-              <li><a href="#central-kitchen"><i class="fa fa-circle"></i></a></li>
-              <li><a href="#media"><i class="fa fa-circle"></i></a></li>
+              <li class="current"><a href="#cooking" id="cooking"><i class="fa fa-circle"></i></a></li>
+              <li><a href="#gobble" id="gobble"><i class="fa fa-circle"></i></a></li>
+              <li><a href="#schools" id="schools"><i class="fa fa-circle"></i></a></li>
+              <li><a href="#factory-canteens" id="factory-canteens"><i class="fa fa-circle"></i></a></li>
+              <li><a href="#nutritions" id="nutritions"><i class="fa fa-circle"></i></a></li>
+              <li><a href="#central-kitchen" id="central-kitchen"><i class="fa fa-circle"></i></a></li>
+              <li><a href="#media" id="media"><i class="fa fa-circle"></i></a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer-bottom">
+    <div class="container">
+      <div class="row" id="footer-container-bottom">
+        <!-- <center><img class="img-responsive" style="width: 25%;" src="images/bullets.png" /></center> -->
+        <div class="row">
+            <ul class="list-inline text-center circle-links" id="footer-link">
+              <li><a href="#cooking" id="cooking"><i class="fa fa-circle"></i></a></li>
+              <li><a href="#gobble" id="gobble"><i class="fa fa-circle"></i></a></li>
+              <li><a href="#schools" id="schools"><i class="fa fa-circle"></i></a></li>
+              <li><a href="#factory-canteens" id="factory-canteens"><i class="fa fa-circle"></i></a></li>
+              <li><a href="#nutritions" id="nutritions"><i class="fa fa-circle"></i></a></li>
+              <li><a href="#central-kitchen" id="central-kitchen"><i class="fa fa-circle"></i></a></li>
+              <li><a href="#media" id="media"><i class="fa fa-circle"></i></a></li>
             </ul>
         </div>
       </div>
@@ -381,26 +399,27 @@
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
   <script type="text/javascript">
-  // create the back to top button
-  $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+    // create the back to top button
+    var amountScrolled = 300;
 
-  var amountScrolled = 300;
-
-  $(window).scroll(function() {
-  	if ( $(window).scrollTop() > amountScrolled ) {
-  		$('a.back-to-top').fadeIn('slow');
-  	} else {
-  		$('a.back-to-top').fadeOut('slow');
-  	}
-  });
-
-  $('a.back-to-top, a.simple-back-to-top').click(function() {
-  	$('html, body').animate({
-  		scrollTop: 0
-  	}, 700);
-  	return false;
-  });
+    $(window).scroll(function() {
+    	if ( $(window).scrollTop() > amountScrolled ) {
+        $('#footer').fadeIn('slow');
+    	} else {
+    		$('#footer').fadeOut('slow');
+    	}
+    });
   </script>
+
+  <script type="text/javascript">
+    $(window).scroll(function() {
+        if ($('body').height() <= ($(window).height() + $(window).scrollTop())) {
+          $('#footer').hide();
+          $('#footer-bottom').removeClass('hidden');
+        }
+    });
+  </script>
+
 </body>
 
 </html>
