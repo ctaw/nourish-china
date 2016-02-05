@@ -86,7 +86,7 @@ section#cooking {
 .title-img{
   width: 280px;
 }
-section#gobble,#schools,#nutritions,#central-kitchen{
+section#gobble,#schools,#nutritions1,#central-kitchen{
   margin-top:100px;
 }
 .highlight-text{
@@ -113,7 +113,7 @@ section#gobble,#schools,#nutritions,#central-kitchen{
 .title-link {
   margin-top: 10px;
 }
-section#factory-canteens{
+section#factory-canteens1{
   background: url('/images/factory-image.jpg') no-repeat center scroll;
   background-size:cover;
   height: 420px;
@@ -122,7 +122,7 @@ section#factory-canteens{
 #factory-canteens-container{
   margin-top: 100px;
 }
-#nutritions-container{
+#nutritions-container1{
   background: url('/images/nutrition-image.png') no-repeat center scroll;
   background-size:cover;
   height: auto;
